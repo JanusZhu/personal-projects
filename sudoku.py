@@ -82,7 +82,7 @@ def check_solver(bo):
     print("          ")
     solve(bo)
     if find_empty(bo):
-        print("No solution")
+        print("No solution") #if we can still find zero in the board after run solve(bo), this means the sudoku is unsolvable
     else:
         print_board(bo)
 
